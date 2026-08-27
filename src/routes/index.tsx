@@ -4,6 +4,8 @@ import { toast } from "sonner";
 import { Mail, MapPin, Phone, Building2, Clock } from "lucide-react";
 
 import logo from "@/assets/mccloud-logo.png.asset.json";
+import office from "@/assets/office.jpg.asset.json";
+import staff from "@/assets/staff.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -192,6 +194,24 @@ function ContactPage() {
             </ul>
           </div>
 
+          <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+            <img
+              src={office.url}
+              alt="Modern accounting office in West Perth"
+              width={1024}
+              height={768}
+              loading="lazy"
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <div className="p-5">
+              <h3 className="font-serif text-lg">Our office</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Professional, client-focused environment in the heart of West
+                Perth.
+              </p>
+            </div>
+          </div>
+
           <div className="rounded-lg border border-border bg-secondary p-6">
             <h3 className="font-serif text-lg">Principal</h3>
             <p className="mt-2 text-sm text-muted-foreground">
@@ -199,6 +219,24 @@ function ContactPage() {
               and business advisory services to individuals and businesses across
               Perth.
             </p>
+          </div>
+
+          <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+            <img
+              src={staff.url}
+              alt="Friendly accounting and taxation team"
+              width={1024}
+              height={768}
+              loading="lazy"
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <div className="p-5">
+              <h3 className="font-serif text-lg">Our team</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Experienced advisors ready to help with your tax and business
+                needs.
+              </p>
+            </div>
           </div>
         </aside>
       </main>
