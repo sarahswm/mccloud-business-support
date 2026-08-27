@@ -179,10 +179,10 @@ function ContactPage() {
               <li className="flex gap-3">
                 <Mail className="mt-0.5 size-5 shrink-0 text-accent" />
                 <a
-                  href="mailto:admin@mccloudbtm.com.au"
+                  href="mailto:sarah@swmccloud.com.au"
                   className="hover:text-primary"
                 >
-                  admin@mccloudbtm.com.au
+                  Sarah Bell — sarah@swmccloud.com.au
                 </a>
               </li>
               <li className="flex gap-3">
