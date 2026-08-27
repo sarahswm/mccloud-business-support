@@ -4,6 +4,8 @@ import { toast } from "sonner";
 import { Mail, MapPin, Phone, Building2, Clock } from "lucide-react";
 
 import logo from "@/assets/mccloud-logo.png.asset.json";
+import office from "@/assets/office.jpg.asset.json";
+import staff from "@/assets/staff.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
