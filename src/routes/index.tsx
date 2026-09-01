@@ -3,9 +3,9 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { Mail, MapPin, Phone, Building2, Clock } from "lucide-react";
 
-import logo from "@/assets/mccloud-logo.png.asset.json";
-import office from "@/assets/office.jpg.asset.json";
-import staff from "@/assets/staff.jpg.asset.json";
+import logo from "@/assets/mccloud-logo.png";
+import office from "@/assets/office.png";
+import staff from "@/assets/staff.png";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -68,7 +68,7 @@ function ContactPage() {
       <header className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <img
-            src={logo.url}
+            src={logo}
             alt="McCloud Business & Taxation Management logo"
             className="h-14 w-auto"
           />
@@ -196,7 +196,7 @@ function ContactPage() {
 
           <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
             <img
-              src={office.url}
+              src={office}
               alt="Modern accounting office in West Perth"
               width={1024}
               height={768}
@@ -223,7 +223,7 @@ function ContactPage() {
 
           <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
             <img
-              src={staff.url}
+              src={staff}
               alt="Friendly accounting and taxation team"
               width={1024}
               height={768}
