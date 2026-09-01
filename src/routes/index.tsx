@@ -1,11 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
-import { Mail, MapPin, Phone, Building2, Clock } from "lucide-react";
+import { Mail, MapPin, Phone, Building2, Clock, Users } from "lucide-react";
 
 import logo from "@/assets/mccloud-logo.png";
-import office from "@/assets/office.png";
-import staff from "@/assets/staff.png";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -195,14 +193,9 @@ function ContactPage() {
           </div>
 
           <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
-            <img
-              src={office}
-              alt="Modern accounting office in West Perth"
-              width={1024}
-              height={768}
-              loading="lazy"
-              className="aspect-[4/3] w-full object-cover"
-            />
+            <div className="flex aspect-[4/3] w-full items-center justify-center bg-muted">
+              <Building2 className="size-12 text-muted-foreground/50" />
+            </div>
             <div className="p-5">
               <h3 className="font-serif text-lg">Our office</h3>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -222,14 +215,9 @@ function ContactPage() {
           </div>
 
           <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
-            <img
-              src={staff}
-              alt="Friendly accounting and taxation team"
-              width={1024}
-              height={768}
-              loading="lazy"
-              className="aspect-[4/3] w-full object-cover"
-            />
+            <div className="flex aspect-[4/3] w-full items-center justify-center bg-muted">
+              <Users className="size-12 text-muted-foreground/50" />
+            </div>
             <div className="p-5">
               <h3 className="font-serif text-lg">Our team</h3>
               <p className="mt-1 text-sm text-muted-foreground">
